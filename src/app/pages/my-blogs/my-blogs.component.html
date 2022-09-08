@@ -1,0 +1,48 @@
+
+<div class="container  ">
+  
+    <h1 class="d-flex justify-content-center mt-5 pt-5">My Blogs</h1>
+
+    <div class="row mt-2 g-5">
+            <div  class="col-sm-12 col-md-12 col-lg-12"  *ngFor="let blog of MyBlogs">
+                <div class="card ms-5 me-5"  >
+                    <div class="card-body">
+                        <h4 class="card-title mb-3  ms-2">{{ blog.title }}</h4>
+                        <h5 class=" ms-2"><span class="badge rounded-pill bg-secondary me-2" *ngFor="let tag of blog.tagline">{{tag}}</span></h5>
+                        <p class="card-text limit-lines ms-2" [innerHTML]="blog.content"> </p>
+                          <div class="ms-2"> 
+                            <small class="text-muted">Author: {{blog.authorDetail.name}}</small>
+                            <br>
+                            <small class="text-muted">Posted at: {{blog.postedAt | date}}</small>
+                            <br>
+                            <small class="text-muted">Comments: {{blog.Comments.length}}</small>
+                         </div>
+                        <div class="float-end mt-1">
+                          <a class="btn btn-md btn-dark me-2 float-bottom " (click)="ViewBlog(blog._id)" >view</a>
+                          <a class="btn btn-md btn-dark me-2 float-bottom " (click)="EditBlog(blog._id)" >Edit</a>
+                          <a class="btn btn-md btn-dark me-2 float-bottom"  data-bs-toggle="modal" (click)="setDelId(blog._id)" data-bs-target="#exampleModal">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                  <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-center mt-4">
+                      Are you sure you want to delete blog?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-dark" (click)="deleteBlog()" data-bs-dismiss="modal">Yes, Delete!</button>
+                    </div>
+                  </div>
+                </div>
+    </div>
+
+</div>
+
+
+
+
+

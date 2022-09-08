@@ -1,0 +1,9 @@
+.limit-lines{
+    width: 100%;
+    line-height: 1.2em;
+    height: 7.2em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6 ;
+}

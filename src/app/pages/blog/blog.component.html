@@ -1,0 +1,36 @@
+
+<div class="container">
+    <h1 class="d-flex justify-content-center mt-5 pt-5"> Blogs</h1>
+
+    <div class="row mt-2 g-5">
+            <div  class="col-sm-12 col-md-12 col-lg-12 col-12"  *ngFor="let blog of Blogs">
+                <div class="card ms-5 me-5">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">{{ blog.title }}</h4>
+                        <h5 ><span class="badge rounded-pill bg-secondary me-2" *ngFor="let tag of blog.tagline">{{tag}}</span></h5>
+                        <p class="card-text limit-lines" [innerHTML]="blog.content"> </p>
+                        
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                <small class="text-muted">Author: {{blog.authorDetail.name}}</small>
+                                <br>
+                                <small class="text-muted">Posted at: {{blog.postedAt | date}}</small>
+                                <br>
+                                <small class="text-muted">Comments: {{blog.Comments.length}}</small>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3 ">
+                                <a class="btn btn-md btn-dark float-end float-bottom" (click)="ViewBlog(blog._id)" >view</a>
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+
+
+

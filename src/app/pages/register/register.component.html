@@ -1,0 +1,64 @@
+<div class="contianer-sm" >
+  <div class="row mt-5 g-5  p-5" >
+
+    <div class="col-lg-5 col-md-6 col-sm-12 mt-5 ">
+      <div  class="mb-3 mt-4">
+        <h2 class="d-flex justify-content-center" >Register</h2>
+      </div>
+        <div class="ms-5 me-4 mb-4 row">
+          <div class="col-12">
+            <label for="inputName" class=" col-form-label">Username</label>
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" id="name" [(ngModel)]="name">
+            <small class="text-danger" *ngIf="nameerr">Username is required!</small>
+            </div>
+        </div>
+
+        <div class="ms-5 me-4 mb-4 row">
+          <div class="col-12">
+            <label for="inputName" class="col-form-label">Email</label>
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control" id="inputEmail" [(ngModel)]="email" >
+                <small class="text-danger" *ngIf="emailerr">Email is required!</small>
+          </div>
+        </div>
+        <div class="ms-5 me-4 mb-4 row">
+          <div class="col-12">
+            <label for="inputPassword" class="col-form-label">Password</label>
+          </div>
+          <div class="col-12">
+            <input type="password" class="form-control" id="inputPassword" [(ngModel)]="password" required="true">
+            <small class="text-danger" *ngIf="passerr">Password is required!</small>
+          </div>
+        
+        </div>
+
+
+        <div class="ms-5 me-4 mb-4 mt-5 row" >
+          <div class="col-12">
+            <button class="btn btn-lg btn-dark w-100 p-2"  (click)="register()">Sign Up</button>     
+          </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-12 mt-5">
+      <img  src="https://fizzle.imgix.net/2012/01/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg?w=736&auto=compress,format" class="d-inline-block align-top mt-4" alt="" style="height: 450px; width:100%; object-fit: cover;" >
+    </div>
+      <!-- <h3>Register</h3>
+      <div class="alert alert-danger" role="alert" *ngIf="registerError">
+          Invalid Information
+      </div>
+      <div class="alert alert-success" role="alert" *ngIf="registerSuccess">
+          User created successfully!
+      </div> -->
+      
+          
+          
+
+        
+
+  </div>
+</div>
