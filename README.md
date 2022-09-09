@@ -1,27 +1,6 @@
-# TodoApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![login](https://user-images.githubusercontent.com/73635088/189278347-d996295c-bd8d-4a9d-aaf8-5f0bf69cb598.PNG)
+![signip](https://user-images.githubusercontent.com/73635088/189278354-d5561f9a-46c8-4538-9d63-ac49cbc8b0ba.PNG)
+![home](https://user-images.githubusercontent.com/73635088/189278378-4bbf0161-4c03-454e-a919-11f14b106409.PNG)
+![myblogs](https://user-images.githubusercontent.com/73635088/189278399-b087d374-3105-444c-a29c-03b927ce5e04.PNG)
+![blogs](https://user-images.githubusercontent.com/73635088/189278424-1f42a822-83c9-4418-92af-83739349431a.PNG)
+![view](https://user-images.githubusercontent.com/73635088/189278455-5f0bb030-5f67-41df-980e-69b2dda60c24.PNG)
